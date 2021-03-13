@@ -144,7 +144,7 @@ async def query_mgs(client: Bot, message: Message):
                     text=Presets.NO_MEDIA.format(query_message),
                     reply_to_message_id=message.message_id,
                 )
-                time.sleep(600)
+                time.sleep(60)
                 await a.delete()
             except Exception:
                 pass
